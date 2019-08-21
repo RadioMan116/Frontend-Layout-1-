@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="172px" height="70px" viewBox="0 0 172 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Desktop HD Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Этикетки" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-2">
+            <text id="Грузовоз" opacity="0.949999988" font-family="Helvetica-Bold, Helvetica" font-size="24" font-weight="bold" fill="#FFFFFF">
+                <tspan x="46.4555279" y="35.78812">Грузовоз</tspan>
+            </text>
+            <text id="Мы-знаем-русские-дор" font-family="Helvetica" font-size="10" font-weight="normal" fill="#FFFFFF">
+                <tspan x="40.4555279" y="57.78812">Мы знаем русские дороги</tspan>
+            </text>
+            <polyline id="Line" stroke="#FFC84A" stroke-width="3" stroke-linecap="square" points="8 10 28.1973591 46.2568047 33.5339437 20.6684843 44.9555279 45.28812 157.955528 45.28812"></polyline>
+        </g>
+    </g>
+</svg>
