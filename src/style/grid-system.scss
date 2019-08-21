@@ -1,58 +1,55 @@
 :root {
-  --max_width: 72rem;
-  --columns: 12;
-  --gutter: .5rem;
-  --baseline: 3rem;
-  --baseline-shift: 2rem;
-  --color-text: hsla(204, 80%, 72%, 1);
-  --media-query: 'base';
+	--max_width: 72rem;
+	--columns: 12;
+	--gutter: .5rem;
+	--baseline: 3rem;
+	--baseline-shift: 2rem;
+	--color-text: hsla(204, 80%, 72%, 1);
+	--media-query: 'base';
 }
 
 :root {
-  --offset: 4rem;
-  --color: hsla(286, 51%, 44%, 0.25);
-  --color-text: hsla(286, 51%, 44%, 1);
-  --media-query: 'large';
+	--offset: 4rem;
+	--color: hsla(286, 51%, 44%, 0.25);
+	--color-text: hsla(286, 51%, 44%, 1);
+	--media-query: 'large';
 }
 
 /* Helper variables */
 :root {
-  --repeating-width: calc(100% / var(--columns));
-  --column-width: calc((100% / var(--columns)) - var(--gutter));
-  --background-width: calc(1024px + var(--gutter));
-  --background-columns: repeating-linear-gradient(
-                  to right,
-                  var(--color),
-                  var(--color) var(--column-width),
-                  transparent var(--column-width),
-                  transparent var(--repeating-width)
-  );
+	--repeating-width: calc(100% / var(--columns));
+	--column-width: calc((100% / var(--columns)) - var(--gutter));
+	--background-width: calc(1024px + var(--gutter));
+	--background-columns: repeating-linear-gradient(to right,
+			var(--color),
+			var(--color) var(--column-width),
+			transparent var(--column-width),
+			transparent var(--repeating-width));
 }
 
-body {
-}
+body {}
 
 .grid:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-image: linear-gradient(rgba(0,0,0,.9) 1px, transparent 1px);
-  background-size: 100% 2rem;
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-image: linear-gradient(rgba(0, 0, 0, .9) 1px, transparent 1px);
+	background-size: 100% 2rem;
 }
 
 .grid {
-  position: relative;
-  z-index: -1;
-  margin-right: auto;
-  margin-left: auto;
-  min-height: 100vh;
-  content: '';
-  background-image: var(--background-columns);
-  background-size: var(--background-width) 100%;
-  background-position: center var(--baseline-shift);
-  background-repeat: no-repeat;
-  opacity: .7;
-  pointer-events: none;
+	position: relative;
+	z-index: -1;
+	margin-right: auto;
+	margin-left: auto;
+	min-height: 100vh;
+	content: '';
+	background-image: var(--background-columns);
+	background-size: var(--background-width) 100%;
+	background-position: center var(--baseline-shift);
+	background-repeat: no-repeat;
+	opacity: .7;
+	pointer-events: none;
 }

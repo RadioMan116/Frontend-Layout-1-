@@ -1,0 +1,365 @@
+@import 'grid-system.scss';
+
+.wrapper {
+	background: #ffffff;
+	//width: 1024px;
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&>.limiter {
+		flex: 1;
+		width: 100%;
+		max-width: 1024px;
+	}
+
+	.limiter {
+		flex: 1;
+		width: 100%;
+		max-width: 1024px;
+	}
+}
+
+h2 {
+
+	&.our-direction,
+	&.title,
+	&.title-rates,
+	&.bt_title,
+	&.title-delivery,
+	&.ti_title,
+	&.goods_title,
+	&.our-direction {
+		padding-top: 2rem;
+		padding-bottom: 1rem;
+		font-weight: 300;
+		font-size: 3rem;
+		margin: 0;
+	}
+}
+
+body {
+	font-family: Helvetica, sans-serif;
+	line-height: 1.6;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0;
+}
+
+header {
+	max-width: 100%;
+	width: 100%;
+	//height: 60px;
+}
+
+.container {
+	//width: 90%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.div1 {
+	width: 100%;
+	position: relative;
+
+
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 30%;
+		background-color: #FFC84A;
+	}
+}
+
+.div2 {
+	width: 100%;
+	padding-bottom: 75px;
+	margin-top: 3rem;
+}
+
+
+@media screen and (max-width: 768px) {
+	body {
+		align-items: flex-start;
+	}
+
+	.wrapper {
+		//width: 740px;
+	}
+
+	.header_a {
+		font-size: 12px;
+	}
+
+	.block-dr {
+		width: 18%;
+		font-size: 12px;
+	}
+
+	.div3 {
+		font-size: 13px;
+	}
+
+	.title_one {
+		width: 63%;
+	}
+
+	.title_one h2 {
+		width: 21%;
+	}
+
+	.table-menu {
+		padding: 15px 74px;
+	}
+
+	.delivery_map {
+		display: none;
+	}
+
+	.delivery_text {
+		width: 61%;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+
+	.delivery_h3 {
+		margin: 0;
+		padding: 17px 0 1px;
+	}
+
+	.delivery_p {
+		margin: 0;
+	}
+
+	.map_main {
+		width: 70%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.wrapper {
+		//width: 480px;
+	}
+
+	.div2 {
+		padding-bottom: 15px;
+	}
+
+	.div3 {
+		background: none;
+	}
+
+	.helmet {
+		justify-content: flex-end;
+	}
+
+	.burger_menu {
+		width: 20%;
+		display: flex;
+		align-items: center;
+	}
+
+	.logo {
+		//width: 50%;
+	}
+
+	.hm_list {
+		//width: 29%;
+
+		flex-direction: column;
+	}
+
+	.hm_block {
+		width: 100%;
+	}
+
+	.hm_block a {
+		padding: 0;
+	}
+
+	.hm_block:nth-child(1),
+	.hm_block:nth-child(2),
+	.hm_block:nth-child(3) {
+		display: none;
+	}
+
+	.block-direction {
+		justify-content: space-around;
+	}
+
+	.block-dr:nth-child(1),
+	.block-dr:nth-child(2),
+	.block-dr:nth-child(3) {
+		border-right: none;
+	}
+
+	.block-dr:nth-child(1),
+	.block-dr:nth-child(2) {
+		border-bottom: 3px solid rgba(255, 200, 74, .51);
+	}
+
+	.block-dr {
+		width: 36%;
+		padding: 10px 0;
+	}
+
+	.carpark_main {
+		display: none;
+	}
+
+	.carpark_main_mobile {
+		display: flex;
+		flex-direction: column;
+		background: white;
+	}
+
+	.carpark_auto {
+		display: flex;
+		width: 91%;
+		margin: 0 auto;
+		font-size: 11px;
+		justify-content: space-between;
+		height: 200px;
+		align-items: center;
+	}
+
+	.carpark_auto:first-child {
+		border-bottom: 2px solid rgba(255, 200, 74, 0.51);
+	}
+
+	.carpark_images {
+		width: 45%;
+		height: 90%;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+
+	}
+
+	.text {
+		width: 45%;
+		height: 90%;
+	}
+
+	.text_p {
+		font-weight: bold;
+	}
+
+	.text_span {
+		font-weight: 500;
+		font-size: 23px;
+		padding: 0 3px;
+	}
+
+	.carpark_h2 {
+		width: 90%;
+		height: 25%;
+	}
+
+	.img {
+		width: 70%;
+		height: 46%;
+	}
+
+	.rates_mobile {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 auto;
+		background: #ffc84a;
+	}
+
+	.title-rates {
+		display: none;
+	}
+
+	.table-menu {
+		padding: 0;
+		border-top: none;
+
+	}
+
+	.table-menu p {
+		padding: 6px 0;
+		width: 40%;
+		border-bottom: 3px solid rgba(255, 255, 255, .51);
+		font-size: 12px;
+	}
+
+	.table_menu_h3 {
+		width: 39%;
+		text-align: center;
+	}
+
+	.bricks {
+		justify-content: flex-start;
+		padding-bottom: 31px;
+	}
+
+	.block-fon {
+		width: 97%;
+		height: 150px;
+		display: flex;
+		background-color: white;
+		justify-content: space-around;
+		align-items: center;
+		border: 1px solid #ffc84a;
+	}
+
+	.block-fon:hover {
+		border: 1px solid #ffc84a;
+	}
+
+	.block-fon p {
+		width: 48%;
+		font-size: 13px;
+	}
+
+	.bricks_text {
+		display: none;
+	}
+
+	.delivery_text {
+		width: 64%;
+	}
+
+	.map_main {
+		display: none;
+	}
+
+	.map_main_mobaile {
+		display: flex;
+		justify-content: center;
+		padding: 20px 0;
+	}
+
+	.map_info {
+		display: none;
+	}
+
+	.footer_main {
+		width: 100%;
+		flex-wrap: wrap;
+	}
+
+	.footer_info {
+		width: 50%;
+		height: 105px;
+	}
+
+	.footer_info:nth-child(1),
+	.footer_info:nth-child(2) {
+		border-bottom: 1px solid #fff;
+	}
+}

@@ -31,6 +31,7 @@ gulp.task('scripts', function () {
 		.pipe(uglify().on('error', function (e) {
 			console.log(e);
 		}))
+		.pipe(concat('min.js')) // склеиваем все JS
 		.pipe(gulp.dest('./dist/js'))
 });
 
@@ -44,9 +45,9 @@ gulp.task('sections', ['sass'], function () {
 		}, {}, {
 			ext: '.html'
 		}))
-		.pipe(htmlmin({
-			collapseWhitespace: true
-		}))
+		// .pipe(htmlmin({
+		// 	collapseWhitespace: true
+		// }))
 		.pipe(gulp.dest('./dist'))
 });
 
