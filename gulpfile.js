@@ -9,22 +9,17 @@ var ejs = require('gulp-ejs');
 // var babel = require('gulp-babel');
 var fs = require('fs');
 
-gulp.task('grid', function () {
-	return gulp.src('src/style/**/grid-system.scss')
-		.pipe(sass())
-		.pipe(cssmin())
-		.pipe(gulp.dest('dist/style/'));
-});
+
 
 gulp.task('sass', function () {
-	return gulp.src('src/style/**/*.scss')
+	return gulp.src('src/style/**/style.scss')
 		.pipe(sass())
 		.pipe(cssmin())
 		.pipe(gulp.dest('dist/style/'));
 });
 
 gulp.task('scripts', function () {
-	return gulp.src('src/js/*')
+	return gulp.src('src/js/**/*')
 		// .pipe(babel({
 		//     presets: ['es2015']
 		// }))
@@ -36,12 +31,12 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('sections', ['sass'], function () {
-	var criticalStyle = fs.readFileSync('./dist/style/index.css', 'utf8');
+	// var criticalStyle = fs.readFileSync('./dist/style/index.css', 'utf8');
 	var version = '4';
 	return gulp.src('./src/*.ejs')
 		.pipe(ejs({
-			criticalStyle: criticalStyle,
-			version: version
+			// criticalStyle: criticalStyle,
+			// version: version
 		}, {}, {
 			ext: '.html'
 		}))
@@ -69,4 +64,4 @@ gulp.task('watch', ['default'], function () {
 });
 
 
-gulp.task('default', ['sass', 'assets', 'scripts', 'sections', 'fonts', 'grid']);
+gulp.task('default', ['sass', 'assets', 'scripts', 'sections', 'fonts']);
